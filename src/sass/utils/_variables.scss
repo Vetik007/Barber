@@ -1,0 +1,23 @@
+:root {
+  --primary-fonts: 'Open Sans', sans-serif;
+  --accent-fonts: 'Raleway', sans-serif;
+
+  /* text colors */
+  --primary-color: #303030;
+  --second-color: #ffffff;
+  --accent-color: #ff6c00;
+  --text-primary-color: #555555;
+  --text-second-color: #9da4bd;
+
+  /* background colors */
+  --white-bg-color: #f7f7f7;
+  --black-bg-color: #111319;
+
+  // /* grid items */
+  // --items: 1;
+  // --indent: 30px;
+
+  /* animations */
+  --slow-anim: 700ms ease;
+  --fast-anim: 400ms ease-in-out;
+}

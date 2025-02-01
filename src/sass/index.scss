@@ -1,2 +1,20 @@
-@import './common';
-@import './example';
+@import './utils/variables';
+@import './utils/reset';
+
+@import './base/common';
+@import './base/container';
+// @import './base/js-selectors';
+// @import './base/animations';
+
+// @import './slide-top-btn';
+
+@import './header';
+@import './hero';
+
+// @import './about';
+// @import './price';
+// @import './benefits';
+// @import './team';
+// @import './gallery';
+// @import './contacts';
+// @import './footer';

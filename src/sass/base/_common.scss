@@ -1,0 +1,64 @@
+/* Плавниий скролінг до секції */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', 'Raleway', sans-serif;
+  // font-family: var(--main-font);
+  // font-size: 14px;
+  // line-height: 1.86;
+  // letter-spacing: 0.02em;
+
+  // color: var(--main-txt-cl);
+
+  /* background-image: url(../images/stock.jpg); */
+  /* background-size: 300px 300px; */
+}
+
+img {
+  display: block;
+  height: auto;
+  //   max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.pre-text {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    display: block;
+    background: currentColor;
+    margin-right: 20px;
+  }
+}
+
+// .pre-title::before {
+//   content: '';
+//   width: 60px;
+//   height: 1px;
+//   display: block;
+//   background: currentColor;
+//   margin-right: 20px;
+// }
