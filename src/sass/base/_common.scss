@@ -64,6 +64,17 @@ button {
   }
 }
 
+.active {
+  transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--second-color);
+  &:hover,
+  &:focus {
+    transition: color 0.75s, transform 0.75s;
+    transform: scale(1.1);
+    color: var(--accent-color);
+  }
+}
+
 // .pre-title::before {
 //   content: '';
 //   width: 60px;

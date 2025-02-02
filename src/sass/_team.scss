@@ -1,56 +1,124 @@
-/**
-  |============================
-  | Team section
-  |============================
-*/
 .team {
-  background-color: #f7f7f7;
+  padding: 120px 0px;
+  background-color: var(--white-bg-color);
 }
 
-.team .uppertitle {
+.team-preText {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
-
-  color: #303030;
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
-.team .section-title {
+.team-title {
   font-weight: 700;
   font-size: 42px;
   line-height: 1.16;
+  color: var(--primary-color);
   letter-spacing: 0.05em;
-
-  color: #303030;
+  margin-bottom: 44px;
 }
 
-.member-item {
-  --items: 3;
+.team-list {
+  display: flex;
+  /* gap: 30px; */
 }
 
-.member-group {
-  padding-top: 30px;
-  padding-bottom: 30px;
+.team-item {
+  width: calc((100% - 60px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.member-title {
-  margin-bottom: 8px;
+/* можно еще так */
 
+/* .barbers-item {
+  flex-basis: calc((100% - 60px) / 3);
+} */
+
+.team-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-coverText {
+  position: absolute;
+  top: 0;
+  color: var(--second-color);
   font-size: 18px;
-  line-height: 1.39;
-  text-align: center;
-
-  color: #303030;
+  font-weight: 600;
+  line-height: 1.5;
+  background-color: rgba(255, 106, 0, 0.489);
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
+.team-thumb:hover .team-coverText {
+  transform: translateY(0);
+  transition: transform 400ms linear;
 }
 
-.member-position {
-  margin-bottom: 30px;
-
-  font-size: 14px;
-  line-height: 1.36;
+.team-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  /* text-align: center; */
+  color: var(--primary-color);
+  letter-spacing: 0.02em;
+  margin-top: 30px;
+  margin-bottom: 8px;
   text-align: center;
+}
 
-  color: #ff6c00;
+.team-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35;
+  /* text-align: center; */
+  color: var(--accent-color);
+  letter-spacing: 0.02em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.team-socList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-socItems {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.team-socLink {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--second-color);
+  color: var(--primary-color);
+}
+
+/* .barber-soc-link:hover .barbers-soc-icons {
+  fill: var(--accent-color);
+} */
+
+/* вариация фокуса на иконку и бегграунд */
+
+.team-socIcons {
+  fill: currentColor;
 }
