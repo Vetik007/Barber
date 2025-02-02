@@ -1,0 +1,98 @@
+.prices {
+  padding: 120px 0px;
+
+  background-image: url(../images/prices-bg.png);
+  background-color: var(--black-bg-color);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.prices-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+
+.prices-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: var(--second-color);
+  letter-spacing: 0.05em;
+  margin-bottom: 44px;
+}
+
+.prices-listWrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.prices-listLeftBlock {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-listRightBlock {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.prices-list {
+  padding: 30px 20px;
+  flex-grow: 1;
+  width: 570px;
+}
+
+.prices-item {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+
+  &::after {
+    content: '';
+    height: 1px;
+    width: 60px;
+    background: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    margin: 0px 12px;
+  }
+}
+
+.prices-itemText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  /* text-align: right; */
+  color: var(--text-second-color);
+  letter-spacing: 0.02em;
+
+  &:last-child {
+    order: 1;
+  }
+}
+
+.prices-button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--second-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  letter-spacing: 0.09em;
+
+  margin: 0px auto;
+  display: block;
+  margin-top: 44px;
+  min-width: 160px;
+  height: 40px;
+}
