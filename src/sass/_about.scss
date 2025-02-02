@@ -1,0 +1,75 @@
+.about {
+  padding: 120px 0px;
+}
+
+.about-container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about-wrap {
+  margin-left: 30px;
+}
+
+.about-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  color: var(--primary-color);
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+}
+
+.about-afterText {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  color: var(--text-primary-color);
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+
+.about-textBlock {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--text-primary-color);
+  letter-spacing: 0.02em;
+  margin-bottom: 42px;
+}
+
+.about-button {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  letter-spacing: 0.09em;
+  min-width: 160px;
+  height: 40px;
+
+  &:hover,
+  &:focus {
+    color: var(--second-color);
+    background: var(--accent-color);
+  }
+}
