@@ -52,15 +52,15 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5;
-  background-color: rgba(255, 106, 0, 0.489);
+  background-color: rgba(62, 62, 240, 0.5);
   padding: 40px;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 300ms linear;
+  transition: transform 500ms linear;
 }
 .team-thumb:hover .team-coverText {
   transform: translateY(0);
-  transition: transform 400ms linear;
+  transition: transform 500ms linear;
 }
 
 .team-name {
