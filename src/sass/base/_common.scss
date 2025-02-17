@@ -4,6 +4,7 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: 'Open Sans', 'Raleway', sans-serif;
   // font-family: var(--main-font);
   // font-size: 14px;
@@ -14,6 +15,11 @@ body {
 
   /* background-image: url(../images/stock.jpg); */
   /* background-size: 300px 300px; */
+  margin: 0;
+}
+
+body.lock {
+  overflow: hidden;
 }
 
 img {
@@ -73,6 +79,11 @@ button {
     transform: scale(1.1);
     color: var(--accent-color);
   }
+}
+
+.wrapper-content {
+  min-height: 100%;
+  overflow: hidden;
 }
 
 // .pre-title::before {
